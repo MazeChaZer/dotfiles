@@ -27,7 +27,7 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -170,3 +170,6 @@ for_window [class="Keepassx"] floating enable
 #exec terminator -c dropdown -p dropdown -T "Le Terminator" -H --geometry=1550x800
 #for_window [class="Terminator" instance="dropdown"] floating enable
 bindsym $mod+q scratchpad show
+
+# Wallpaper
+exec_always --no-startup-id feh --bg-fill /run/media/jonas/Daten/MyStuff/Wallpaper/arch-space/arch-space-1680x1050.png

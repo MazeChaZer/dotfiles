@@ -11,6 +11,16 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 
+URxvt*.transparent: true
+URxvt*.shading: 25
+URxvt.scrollBar: false
+
+! Yankable URLs
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
 !Color Scheme, Source: https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
 !BLK Cursor
 #define _color0        #000d18
