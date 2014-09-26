@@ -16,6 +16,7 @@ Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on
+set guicursor+=a:blinkon0
 syntax on
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 "colorscheme wombat
@@ -25,3 +26,4 @@ set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 "colorscheme peacock
 "colorscheme sourlick
 colorscheme turnip
+nmap =j :%!python -m json.tool<CR>:set filetype=json<CR>
