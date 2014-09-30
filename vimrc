@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'flazz/vim-colorschemes'
 Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
+Plugin 'lilydjwg/colorizer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
