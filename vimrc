@@ -31,3 +31,5 @@ set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 "colorscheme turnip
 colorscheme myturnip
 nmap =j :%!python -m json.tool<CR>:set filetype=json<CR>
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+inoremap <C-Space> <C-x><C-o>
