@@ -172,4 +172,7 @@ for_window [class="Keepassx"] floating enable
 bindsym $mod+q scratchpad show
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill /run/media/jonas/Daten/MyStuff/Wallpaper/arch-space/arch-space-1680x1050.png
+exec_always --no-startup-id feh --bg-fill ~/wallpaper
+
+bindsym $mod+Shift+s exec --no-startup-id systemctl suspend
+bindsym $mod+Shift+h exec --no-startup-id systemctl hibernate

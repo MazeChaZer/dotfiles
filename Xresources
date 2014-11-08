@@ -1,4 +1,4 @@
-xterm*faceName: Inconsolata:size=10:antialias=true
+xterm*faceName: Inconsolata:size=10:antialias=true:hinting=true
 xterm*font: 7x13
 XTerm*locale: true
 XTerm*metaSendsEscape: true
@@ -12,8 +12,12 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 URxvt*.transparent: true
-URxvt*.shading: 25
+URxvt*.shading: 10
 URxvt.scrollBar: false
+!URxvt.font: xft: Inconsolata:pixelsize=16
+URxvt*font: xft:Inconsolata:pixelsize=14:antialias=true:hinting=true
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=14:antialias=true:hinting=true
+URxvt.letterSpace: -1
 
 ! Yankable URLs
 URxvt.perl-ext: default,url-select

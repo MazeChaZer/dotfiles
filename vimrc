@@ -13,6 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 Plugin 'lilydjwg/colorizer'
+Plugin 'CSApprox'
+"Plugin 'KevinGoodsell/vim-csexact'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -26,5 +28,6 @@ set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 "colorscheme peacocks-in-space
 "colorscheme peacock
 "colorscheme sourlick
-colorscheme turnip
+"colorscheme turnip
+colorscheme myturnip
 nmap =j :%!python -m json.tool<CR>:set filetype=json<CR>
