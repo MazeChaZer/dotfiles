@@ -1,0 +1,51 @@
+map -b d <S-d>
+map -b <S-d> d
+"map -b j 2j
+"map -b k 2k
+map -b <C-h> <Nop>
+map -b <bs> <Nop>
+"imap -b <C-c> <C-v><C-c>
+"vmap -b <C-c> <C-v><C-c>
+"imap -b <C-v> <C-v><C-v>
+"imap -b <C-a> <C-v><C-a>
+set! browser.tabs.closeWindowWithLastTab=false
+set defsearch=startpage-https-deutsch
+
+"4chan
+group -locations https?://boards.4chan.org/.+/thread/.+ Fourchan
+map r -j content.document.querySelector("a[data-cmd='update']").click();
+group user
+
+"Imgur
+set passkeys+=imgur.com:-
+group -locations http://imgur.com/* imgur
+"Fix because + does not work on my MacBook
+map + -j $('#mainUpArrow').click();
+map -b l <C-v><Right>
+map -b h <C-v><Left>
+map -b ö <C-v>0
+group user
+
+"Pr0gramm
+set passkeys+=pr0gramm.com:<Left>,<Right>
+group -locations http://pr0gramm.com/* pr0gramm
+map -b l <C-v><Right>
+map -b h <C-v><Left>
+map -b ö <C-v>f
+map -b + <C-v>w
+map -b "-" <C-v>s
+group user
+
+"Style
+set guioptions+=n
+set! browser.tabs.closeButtons=2
+style -name tabs chrome://* <<EOF
+/* Remove these stupid buttons */
+.tabs-newtab-button,
+#new-tab-button,
+.tabs-alltabs-button,
+.tabs-container > stack,
+.tabs-bottom {
+    display: none !important;
+}
+EOF
