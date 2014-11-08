@@ -192,8 +192,8 @@ URxvt.url-select.underline: true
 #define _color1        #FF9999
 #define _color9        #FF9999
 !GRN SpecialKey
-#define _color2        #92B55F
-#define _color10       #92B55F
+#define _color2        #9CBC6E
+#define _color10       #9CBC6E
 !YEL Keyword
 #define _color3        #F0DFAF
 #define _color11       #F0DFAF
@@ -211,12 +211,12 @@ URxvt.url-select.underline: true
 #define _color15       #EFEFEF
 !FMT Include, StatusLine, ErrorMsg
 #define _colorBD       #FFCC99
-#define _colorUL       #92B55F
+#define _colorUL       #9CBC6E
 #define _colorIT       #1A1B1D
 !TXT Normal, Normal, Cursor
 #define _foreground    #FFFFFF
 #define _background    #1A1B1D
-#define _cursorColor   #92B55F
+#define _cursorColor   #9CBC6E
 
 URxvt*color0         : _color0
 URxvt*color1         : _color1
